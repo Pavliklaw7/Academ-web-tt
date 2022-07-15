@@ -11,7 +11,7 @@
             class="social__item"
           >
             <img
-              :src="`../assets/${social.icon}.svg`"
+              :src="getImg(social.icon)"
               :alt="social.icon"
               class="social__item"
             />
@@ -50,6 +50,11 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    getImg(icon) {
+      return `../static/img/${icon}.svg`;
+    },
   },
 };
 </script>
