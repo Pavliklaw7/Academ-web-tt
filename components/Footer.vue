@@ -53,7 +53,7 @@ export default {
   },
   methods: {
     getImg(icon) {
-      return `../static/img/${icon}.svg`;
+      return `img/${icon}.svg`;
     },
   },
 };
