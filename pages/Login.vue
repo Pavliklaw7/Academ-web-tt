@@ -41,11 +41,10 @@ export default {
             password: this.password,
           },
         });
-        this.$auth.$storage.setState("user", response.data.data);
         this.$auth.$storage.setState("loggedIn", true);
+        this.$auth.$storage.setLocalStorage("user", response.data.data);
         this.$router.push("/courses");
       } catch (err) {
-        console.log(err);
         const error = err.response.data.message;
         this.errorMessage = error.slice(0, Number(error.indexOf(".")) + 1);
       }

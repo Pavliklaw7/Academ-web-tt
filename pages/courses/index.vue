@@ -50,6 +50,7 @@ export default {
   },
   mounted() {
     this.fetchCampaigns();
+    console.log(this.$auth);
   },
   computed: {
     itemsPerPage() {
