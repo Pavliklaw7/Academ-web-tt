@@ -23,7 +23,7 @@ export default {
   ],
   target: 'static',
   router: {
-    base: '/academ-web-tt/',
+    base: '/Academ-web-tt/',
 
     middleware: [ 'auth' ]
   },
