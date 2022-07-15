@@ -1,0 +1,40 @@
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.container {
+  width: min(90%, 1140px);
+  margin-inline: auto;
+}
+
+.main-wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: var(--vh);
+  background-color: #ebebeb;
+}
+
+.header {
+  background-color: rgb(45, 45, 45);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+  }
+
+  &__link,
+  &__text {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 0.8rem;
+  }
+}
